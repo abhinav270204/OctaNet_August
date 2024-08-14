@@ -1,0 +1,121 @@
+*{ margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(background.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.top.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgb(0, 0, 0, 0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+    
+}
+.topnav {
+    background-color: green;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+.search input[type="text"]{
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.search button {
+   padding: 6px 10px;
+   background: white;
+   color: green;
+   border: none;
+   cursor: pointer;
+   border-radius: 4px;
+}
+.search button i {
+    font-size: 18px;
+}
+.search button:hover {
+    background: darkgreen;
+    color: white;
+}
+.topnav a.active {
+    background-color: #1dc9f0;
+    color: white;
+}
+.float {
+    box-sizing: border-box;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 300px;
+    
+}
+.float img{
+    border-radius: 40px;
+    float: left;
+    padding-right: 20px;
+    height: 250px;
+}
+.float h2{
+    color: #1dc9f0;
+}
+.float p{
+    font-style: italic;
+    font-size: medium;
+    color: green;
+}
+.float h3{
+    color: brown;
+}
+.footer {
+    padding: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: aqua;
+    text-align:justify;
+    word-spacing: 20px;
+}
